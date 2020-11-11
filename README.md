@@ -3,6 +3,10 @@
 
 The purpose of this initiative is providing a way of initiating and developing CyberSOC services based on open source solutions.
 
+No feedback will be given on the solutions: each organization must test the listed solutions and make sure they work in their context.
+
+Don't hesitate to suggest additional open solutions that could be listed in this initiative. Suggested solutions must be mature (the definition of "mature" should be done).
+
 Services developed in this initiative cover the following capabilities of the CyberSOC:
 - **Core components**: this section lists the structural components that constitute the CyberSOC Information System (CyberSOC IS);
 - **Ecosystem**: this section covers services that enrich data processed by CyberSOC services for improving the accuracy and efficiency of CyberSOC operations;
