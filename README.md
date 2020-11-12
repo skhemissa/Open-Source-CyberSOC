@@ -180,14 +180,14 @@ A skilled technical core team must be considered. This team is :
 
 ## Ecosystem
 ### Asset Database
-
+The Asset Database is crucial for the efficiency of all automate tasks of the CyberSOC. The Asset Database should includes all assets implemented in the organisation, including hardware configuration, operating system, middlewares, applications/services, location, criticality, asset Owner, Security Officer, etc.
 
 > Open source solution that could be considered by IT Teams of the organisation:
 > - [GLPI](https://glpi-project.org/)
 
 ### Network Subnets Ownership
 This component is a subset of the previous one. The purpose of this service is to get the right contact related to an event that contains IPs not listed in the Asset Database.
-For covering this case, each subnet assigned in the organization must be associated with a contact (e.g. a Security Officer). 
+For covering this case, each subnet assigned in the organization must be associated with a contact, at least a Security Officer. 
 
 > Open source solution that could be considered by Telecom Team of the organisation:
 > - [phpIPAM](https://phpipam.net/)
@@ -245,7 +245,7 @@ This service proactively and iteratively searches through Corporate IT to detect
 Two kinds of threat hunting should be considered:
 - Network hunting for analyzing network traffic to detect suspicious network activities (VPN and Tor traffic, suspicious targets, etc.);
 > Open source solution: 
-> - [ntop](https://www.ntop.org/).
+> - [Ntop](https://www.ntop.org/).
 
 - Host hunting for collecting artefacts that could be associated with a suspicious activity (running processes, binaries, task scheduler entries, etc.).
 > Open source solution:
@@ -286,16 +286,16 @@ Log collectors:
 
 > Not an open source solution for collecting Microsoft Windows events:
 > - [Windows Event Forwarding](https://docs.microsoft.com/en-us/windows/security/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection) for collecting Microsoft Windows events on dedicated Windows machine and [winlogbeat](https://www.elastic.co/fr/beats/winlogbeat) to transfers event to log aggregator;
-> [Specific Microsoft Windows events to monitor](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor)
-> [Sysmon](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon) should be deployed.
+> - [Specific Microsoft Windows events to monitor](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor)
+> - [Sysmon](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon) should be deployed.
 
 Log aggregators consolidate logs sent by different sources then forward some of them to the SIEM Engine based on specific rules. Some solutions could run simple rules for detecting suspicious activities (pre-correlation) ex. multiple tcp connections from the same source to different destinations (required collecting firewall logs).
 
 Multiple log aggregators should be considered for addressing specific area (e.g. remote sites with low bandwidth) and also for processing a high number of events (e.g. firewalls logs or Active Directory events).
 > Open source solutions:
 > - [Graylog](https://www.graylog.org/products/open-source).
-> [Logstash](https://www.elastic.co/logstash) is required for connecting Filebeat agents to Graylog
-> Greylog have a specific plugin for enriching events [Threat Intelligence Plugin for Graylog](https://github.com/Graylog2/graylog-plugin-threatintel)
+> - [Logstash](https://www.elastic.co/logstash) is required for connecting Filebeat agents to Graylog
+>  Greylog have a specific plugin for enriching events [Threat Intelligence Plugin for Graylog](https://github.com/Graylog2/graylog-plugin-threatintel)
 
 ### SIEM Engine
 > Open source solutions:
