@@ -105,7 +105,7 @@ if so
   - Perform IP/domain lookups; 
   - Run a hunting task to get artefacts from the asset: process list dump, get  hashes, etc.;
   - Run artefacts analysis tools (local or provided a cloud service);
-- (For critical incident) create a collaboration workgroup to simplify information sharing and invite stakeholders (eg. [Microsoft O365 Teams Channel](https://docs.microsoft.com/en-us/graph/teams-create-group-and-team);
+- (For critical incident) create a collaboration workgroup to simplify information sharing and invite stakeholders (eg. [Microsoft O365 Teams Channel](https://docs.microsoft.com/en-us/graph/teams-create-group-and-team));
 - Assign the alert to the right security officer
 
 Otherwise:
