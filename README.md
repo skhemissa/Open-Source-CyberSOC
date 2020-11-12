@@ -16,9 +16,7 @@ Services developed in this initiative cover the following capabilities of the Cy
 - **Detect**: this section describes the heart of the CyberSOC that identifies the occurrence of a cybersecurity event that raises a cybersecurity incident.
 - **React**: this section describes services that take action, including forensics, regarding a detected cybersecurity incident.
 
-The following two capabilities are not covered in this initiative:
-- Pentesting because it’s related to the skills of pentesters. However, results of pentest campaigns could enrich detect and react capabilities.
-- Management of protection solutions that generate events processed by the CyberSOC. Protecting a Corporate Information Systems (Corporate IS) based on open solutions is another subject. It is not covered in this initiative.
+The following capability is not covered in this initiative: management of protection solutions that generate events processed by the CyberSOC. Protecting a Corporate Information Systems (Corporate IS) based on open solutions is another subject. It is not covered in this initiative.
 
 When relevant, tips from structuring the CyberSOC organisation on each capability are provided.
 
