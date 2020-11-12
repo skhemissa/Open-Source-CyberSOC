@@ -133,12 +133,12 @@ Otherwise no action is done.
 Some tools used by the CyberSOC generate data that are interesting for further analysis or for reporting purposes. A dedicated database for consolidating such data should be considered.  
 > Open source database:
 > - [Postgresql](https://www.postgresql.org/);
-> - [MariaDB](https://mariadb.com/kb/en/documentation/), etc.
+> - [MariaDB](https://mariadb.com/kb/en/documentation/).
 
 Data stored in the database must be accessed using a standard interface. RestAPI for accessing such data should be considered.
 > Open source RESTful API:
 > - [PostgREST](http://postgrest.org) for Postgresql;
-> - [MaxScale for MariaDB](https://mariadb.com/kb/en/maxscale/).
+> - [MaxScale](https://mariadb.com/kb/en/maxscale/) for MariaDB.
 
 ### Project Management and Issues Tracker
 Building a CyberSOC is a complete and complex project that involves multiple stakeholders. It's important to use a robust and flexible solution for managing this project.
