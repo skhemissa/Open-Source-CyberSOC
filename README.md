@@ -143,7 +143,8 @@ Data stored in the database must be accessed using a standard interface. RestAPI
 ### Project Management and Issues Tracker
 Building a CyberSOC is a complete and complex project that involves multiple stakeholders. It's important to use a robust and flexible solution for managing this project.
 Furthermore, a lot of actions such as vulnerabilities and post-incident remediations are raised by the CyberSOC. These actions must be followed up and reported. 
-> Open source solution: [Redmine](https://www.redmine.org/) 
+> Open source solution:
+> - [Redmine](https://www.redmine.org/).
 
 ### Knowledge Management
 A wiki for consolidating knowledge and information such as processes, installations documents, technical manuals, etc. should be considered.
