@@ -18,8 +18,6 @@ Services developed in this initiative cover the following capabilities of the Cy
 
 The following capability is not covered in this initiative: management of protection solutions that generate events processed by the CyberSOC. Protecting a Corporate Information Systems (Corporate IS) based on open solutions is another subject. It is not covered in this initiative.
 
-When relevant, tips from structuring the CyberSOC organisation on each capability are provided.
-
 This initiative is not intended to debate about the competition between open source and commercial solutions. Starting with open source solutions is a good way for, with a minimum of CAPEX: 
 1. Developing skills on a new topic;
 2. Understanding the needs of the organisation;
