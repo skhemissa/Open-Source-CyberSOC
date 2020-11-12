@@ -12,8 +12,8 @@ Don't hesitate to suggest additional open solutions that could be listed in this
 Services developed in this initiative cover the following capabilities of the CyberSOC:
 - **Core components**: this section lists the structural components that constitute the CyberSOC Information System (CyberSOC IS);
 - **Ecosystem**: this section covers services that enrich data processed by CyberSOC services for improving the accuracy and efficiency of CyberSOC operations;
-- **Identify**: this section focuses on fundamental services that support the organisation for identifying weaknesses in the Corporate IS that could be exploited by a malicious activity. Furthermore, services described in this section enrich detect and react capabilities.
-- **Detect**: this section describes the heart of the CyberSOC that identifies the occurrence of a cybersecurity event that raises a cybersecurity incident.
+- **Identify**: this section focuses on fundamental services that support the organisation for identifying weaknesses in the Corporate IS that could be exploited by a malicious activity. Furthermore, services described in this section enrich detect and react capabilities;
+- **Detect**: this section describes the heart of the CyberSOC that identifies the occurrence of a cybersecurity event that raises a cybersecurity incident;
 - **React**: this section describes services that take action, including forensics, regarding a detected cybersecurity incident.
 
 The following capability is not covered in this initiative: management of protection solutions that generate events processed by the CyberSOC. Protecting a Corporate Information Systems (Corporate IS) based on open solutions is another subject. It is not covered in this initiative.
