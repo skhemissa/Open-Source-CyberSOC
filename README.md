@@ -1,8 +1,8 @@
 # Open Source CyberSOC
 > Author: Sabri Khemissa sabri.khemissa@gmail.com
 
-The purpose of this initiative is providing a way of initiating and developing CyberSOC services based on open source solutions.
-
+The purpose of this initiative is to provide a way of initiating and developing CyberSOC services based on open source solutions.
+“...there is no favourable wind for someone who does not know where he is heading”. Seneca
 No feedback will be given on the solutions: each organization must test the listed solutions and make sure they work in their context.
 
 Don't hesitate to suggest additional open solutions that could be listed in this initiative. Suggested solutions must be mature (the definition of "mature" should be done).
