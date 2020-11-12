@@ -323,6 +323,6 @@ Analyzers (connectors):
 
 ### Digital Forensics
 > Open source solutions:
-> - [GRR - Google Rapid Response](https://github.com/google/grr)
+> - [GRR - Google Rapid Response](https://github.com/google/grr);
 > - [Kali Linux](https://www.kali.org/);
 > - [Rescue & Forensic Disk](https://github.com/skhemissa/Rescue-Forensic-Disk) my personal project.
