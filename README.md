@@ -286,15 +286,16 @@ Log collectors:
 
 > Not an open source solution for collecting Microsoft Windows events:
 > -[Windows Event Forwarding](https://docs.microsoft.com/en-us/windows/security/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection) for collecting Microsoft Windows events on dedicated Windows machine and [winlogbeat](https://www.elastic.co/fr/beats/winlogbeat) to transfers event to log aggregator;
->   [Specific Microsoft Windows events to monitor](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor)
->   [Sysmon](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon) should be deployed.
+> [Specific Microsoft Windows events to monitor](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor)
+> [Sysmon](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon) should be deployed.
 
 Log aggregators consolidate logs sent by different sources then forward some of them to the SIEM Engine based on specific rules. Some solutions could run simple rules for detecting suspicious activities (pre-correlation) ex. multiple tcp connections from the same source to different destinations (required collecting firewall logs).
+
 Multiple log aggregators should be considered for addressing specific area (e.g. remote sites with low bandwidth) and also for processing a high number of events (e.g. firewalls logs or Active Directory events).
 > Open source solutions:
 > -[Graylog](https://www.graylog.org/products/open-source).
->  [Logstash](https://www.elastic.co/logstash) is required for connecting Filebeat agents to Graylog
->  Greylog have a specific plugin for enriching events [Threat Intelligence Plugin for Graylog](https://github.com/Graylog2/graylog-plugin-threatintel)
+> [Logstash](https://www.elastic.co/logstash) is required for connecting Filebeat agents to Graylog
+> Greylog have a specific plugin for enriching events [Threat Intelligence Plugin for Graylog](https://github.com/Graylog2/graylog-plugin-threatintel)
 
 ### SIEM Engine
 > Open source solutions:
@@ -318,7 +319,7 @@ Analyzers (connectors):
 ### Incident Tracking
 > Open source solution:
 > - [TheHive](https://github.com/TheHive-Project/TheHive)
->   Multiple actions that should be requested in TheHive could be interfaced with Automation Engine and Analyzer Engine to automate actions.
+> Multiple automated actions done by TheHive could be interfaced with Automation Engine and Analyzer Engine.
 
 ### Digital Forensics
 > Open source solutions:
