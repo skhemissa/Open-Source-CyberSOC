@@ -126,8 +126,8 @@ Otherwise no action is done.
 
 > Open source solutions:
 
-> - [Shuffle](#https://shuffler.io/) This automation solution supports OpenAPI that accelerates the implementation of  playbooks;
-> - [WALKOFF](#https://nsacyber.github.io/WALKOFF/).
+> - [Shuffle](https://shuffler.io/) This automation solution supports OpenAPI that accelerates the implementation of  playbooks;
+> - [WALKOFF](https://nsacyber.github.io/WALKOFF/).
 
 ### CyberSOC Data Store
 Some tools used by the CyberSOC generate data that are interesting for further analysis or for reporting purposes. A dedicated database for consolidating such data should be considered.  
