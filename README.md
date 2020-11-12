@@ -31,6 +31,8 @@ Of course, a shift to commercial solutions could be considered when limits of im
 - Needs and use cases are clearly documented and efficient;
 - Processes are in place.
 
+... and why not outsourcing some services!
+
 Please note that some open source solutions are supported by specific companies with a paid service based on annual fees. But for most of open sources solutions, the support is provided by the associated community of developers: no SLA to consider for solving bugs and issues. For mitigating this risk, it is important to select robust and proven open source solution > the residual risk must be considered in the decision making.
 
 Anyway, there is no doubt that the target CyberSOC will be a mix of commercial solutions, open source solutions and home made tools.
@@ -46,32 +48,26 @@ Anyway, there is no doubt that the target CyberSOC will be a mix of commercial s
   * [Business Intelligence and Reporting](#business-intelligence-and-reporting)
   * [Securing Access to CyberSOC services](#securing-access-to-cybersoc-services)
   * [Organisation](#organisation)
-
-* [Ecosystem](#ecosystem) **IN PROGRESS**
+* [Ecosystem](#ecosystem)
   * [Asset Database](#asset-database)
   * [Network Subnets Ownerships](#network-subnets-ownerships)
+* [Identify](#identify)
+  * [Continuous Exposure Discovery](#continuous-exposure-discovery)
+  * [Vulnerability Management](#vulnerability-management)
+  * [Pentesting](#pentesting)
+  * [Threat Hunting](#threat-hunting)
+  * [Cyber Threat Intelligence](#cyber-threat-intelligence)
+* [Detect](#detect)
+  * [Intrusion Detection Systems](#intrusion-detection-systems)
+  * [Decoy and Deception](#decoy-and-deception)
+  * [Network Behaviour Analysis](#network-behaviour-analysis)
+  * [Log Collectors and Log Aggregators](#log-collectors-and-log-aggregators)
+  * [SIEM Engine](#siem-engine)
+  * [Artefacts and Observables Analyzers](#artefacts-and-observables-analyzers)
+* [React](#react)
+  * [Incident Tracking](#incident-tracking)
+  * [Digital Forensics](#digital-forensics)
 
-* [Identify](#identify) **TODO**
-   * Exposure Discovery
-   * Vulnerability Management
-   * Threat Hunting
-   * Cyber Threat Intelligence
-   * Organisation
-   
-* [Detect](#detect) **TODO**
-  * Intrusion Detection Systems
-  * Decoy and Deception
-  * Network Behaviour Analysis
-  * Collectors
-  * SIEM Engine
-  * Artefacts and Observables Analyzers
-  * Organisation
-  
-* [React](#react) **TODO**
-  * Incident Tracking
-  * Rescue Disk
-  * Digital Forensics
-  * Organisation
 
 ## Core Components
 ### Technological Breakthrough
@@ -178,6 +174,140 @@ The access to the CyberSOC services must be protected by an IPSec VPN with Multi
 
 ### Organisation
 A skilled technical core team must be considered. This team is : 
-1. Accountable for maintaining the consistency of the software architecture/urbanization and the security of the CyberSOC IS;
+1. Accountable for maintaining the consistency of the software architecture/urbanization (especially when several solutions offer the same functionality) and the security of the CyberSOC IS;
 2. Responsible of developing the technical part of the services that will be described in next sections;
 3. Responsible for managing, including patching and upgrading, all the technical components of the CyberSOC IS.
+
+## Detect
+### Continuous Exposure Discovery
+The purpose of this service is running continuously scans in the WAN and Internet faced subnets for discovering specific weaknesses in the Corporate IS such as weak credentials, unprotected services (e.g. Redis), unprotected management interfaces, specific ports (e.g. industrial modbus and S7), etc.
+
+In large environments, fast solutions must be considered. Otherwise, the next service "Vulnerability Management" is enough.
+
+Results of continuous scans should be processed by the Automation Engine for prioritisation, remediation issues creation and assignment.
+
+Network scanner:
+> Open source solutions: 
+> - [Nmap](https://nmap.org/) the ultimate tools;
+> - [Masscan](https://github.com/robertdavidgraham/masscan).
+
+For consolidating port scans results:
+> Open source solution:
+> - [IVRE](https://github.com/cea-sec/ivre) an on-premise shodan like.
+
+For testing specific vulnerabilities:
+> Open source scripts: 
+> - [Nmap Scripting Engine (nse)](https://nmap.org/book/nse.html);
+> - [Github](https://github.com/).
+
+Main scripts used for specific vulnerabilities provide results in flat format: these results should be imported in the "CyberSOC Data Store" (e.g. "Core Components" section).
+
+### Vulnerability Management
+This service assesses the security of Corporate IT components, including network equipment, operating systems, middlewares and applications.
+Scans of this service are exhaustive: they are slower than the scans executed by the service "Continuous Exposure Discovery". Both services could be paired by the Automation Engine: when a new host or a new opened port is detected, a full vulnerability scan could be launched automatically.
+Results of vulnerability scans should be processed by the Automation Engine for prioritisation, remediation issues creation and assignment.
+Scans could also be executed on-demand by the Automation Engine to verify that the remediation associated with a security bulletin is efficient. 
+
+> Open source solution: 
+> - [OpenVAS](https://www.openvas.org/).
+
+This service includes security bulletins processing sent by vendors and CERT (Take a look to the playbook provided in the “Core Components” section)
+
+### Pentesting
+This service is more related to technical skills of pentesters.
+
+> Open source solutions: 
+> - [Kali Linux](https://www.kali.org/);
+
+Pentest actions and results should be consolidated in a central platform.
+> Open source solutions: 
+> - [Faraday](https://github.com/infobyte/faraday) a multiuser pentest IDE.
+
+Red Teaming
+> - [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)
+
+### Threat Hunting
+This service proactively and iteratively searches through Corporate IT to detect and isolate advanced threats that evade existing security solutions.
+Two kinds of threat hunting should be considered:
+- Network hunting for analyzing network traffic to detect suspicious network activities (VPN and Tor traffic, suspicious targets, etc.);
+> Open source solution: 
+> - [ntop](https://www.ntop.org/).
+
+- Host hunting for collecting artefacts that could be associated with a suspicious activity (running processes, binaries, task scheduler entries, etc.).
+> Open source solution:
+> - [Osquery](https://osquery.io/) for threat hunting and [Kolide Fleet](https://github.com/kolide/fleet) for managing an osquery infrastructure.
+
+Usually, Threat Hunting campaigns are executed on-demand: manually or from Automation Engine.
+
+### Cyber Threat Intelligence
+This service collects, stores, distributes and shares cyber security indicators and threats about cyber security incidents analysis and malware analysis.
+With the Automation Engine alerts generated by the SIEM and also Threat Hunting campaigns are enriched by this service.
+
+> Open source solutions:
+> - [OpenCTI](https://github.com/OpenCTI-Platform/opencti);
+> - [MISP](https://www.misp-project.org/).
+
+Because the content of the CTI platform is populated with external sources, a high number of connectors and the relevance of these sources are essential.
+
+## Detect
+### Intrusion Detection Systems
+> Open source solutions:
+> - [Suricata](https://suricata-ids.org/);
+> - [Snort](https://www.snort.org/);
+> - [Zeek (formerly Bro)](https://zeek.org/).
+
+### Decoy and Deception
+To catch enumerations and lateral movements not detected by existing security solutions.
+> Open source solution:
+> - [DejaVU](https://github.com/bhdresh/Dejavu) Open Source Deception Framework;
+> - [Kippo](https://github.com/desaster/kippo) SSH honeypot;
+> - [Conpot](https://github.com/mushorg/conpot) ICS honeypot.
+### Network Behaviour Analysis
+Ntop?
+### Log Collectors and Log Aggregators 
+Log collectors:
+> Open source solutions:
+> -[Filebeat](https://www.elastic.co/beats/filebeat) for collecting logs from files (e.g. web server logs) 
+> -[RSyslog](https://www.rsyslog.com/) for syslog based events;
+
+> Not an open source solution for collecting Microsoft Windows events:
+> -[Windows Event Forwarding](https://docs.microsoft.com/en-us/windows/security/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection) for collecting Microsoft Windows events on dedicated Windows machine and [winlogbeat](https://www.elastic.co/fr/beats/winlogbeat) to transfers event to log aggregator;
+>   [Specific Microsoft Windows events to monitor](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor)
+>   [Sysmon](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon) should be deployed.
+
+Log aggregators consolidate logs sent by different sources then forward some of them to the SIEM Engine based on specific rules. Some solutions could run simple rules for detecting suspicious activities (pre-correlation) ex. multiple tcp connections from the same source to different destinations (required collecting firewall logs).
+Multiple log aggregators should be considered for addressing specific area (e.g. remote sites with low bandwidth) and also for processing a high number of events (e.g. firewalls logs or Active Directory events).
+> Open source solutions:
+> -[Graylog](https://www.graylog.org/products/open-source).
+>  [Logstash](https://www.elastic.co/logstash) is required for connecting Filebeat agents to Graylog
+>  Greylog have a specific plugin for enriching events [Threat Intelligence Plugin for Graylog](https://github.com/Graylog2/graylog-plugin-threatintel)
+
+### SIEM Engine
+> Open source solutions:
+> - [OSSEC](https://www.ossec.net/);
+> - [Wazuh](https://wazuh.com/) a fork of OSSEC;
+> - [Elastic Stack Basic Plan](https://www.elastic.co/siem);
+> - [Apache Motron](https://metron.apache.org/);
+> - [MozDef (Mozilla Defense Platform)](https://github.com/mozilla/MozDef) (Pre Beta).
+
+### Artefacts and Observables Analyzers
+Analyzer Engine connects to different tools to run specific action to enrich the content of a query (e.g. nslookup, public IP reputation) or executes a specific action (e.g. parsing file to extract meta or malicious content, run a URL and a file in a sandbox).
+Please note that some features provided by the Automation Engine could be provided by the Analyzer Engine. Thanks to the urbanization of the CyberSOC IS to define the relevant use cases to be implemented on each solution. 
+> Open source solution:
+> - [Cortex](https://github.com/TheHive-Project/Cortex).
+
+Analyzers (connectors):
+> Free / open source solution:
+> - [Take a look to Cortex dedicated page](https://github.com/TheHive-Project/CortexDocs/blob/master/analyzer_requirements.md).
+
+## React
+### Incident Tracking
+> Open source solution:
+> - [TheHive](https://github.com/TheHive-Project/TheHive)
+>   Multiple actions that should be requested in TheHive could be interfaced with Automation Engine and Analyzer Engine to automate actions.
+
+### Digital Forensics
+> Open source solutions:
+> - [GRR - Google Rapid Response](https://github.com/google/grr)
+> - [Kali Linux](https://www.kali.org/);
+> - [Rescue & Forensic Disk](https://github.com/skhemissa/Rescue-Forensic-Disk) my personal project.
