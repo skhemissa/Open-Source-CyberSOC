@@ -1,5 +1,7 @@
 # Open Source CyberSOC
-> Author: Sabri Khemissa sabri.khemissa@gmail.com
+>Author: Sabri Khemissa sabri.khemissa@gmail.com.
+
+>Status: working copy.
 
 The purpose of this initiative is to provide a way of initiating and developing CyberSOC services based on open source solutions.
 
