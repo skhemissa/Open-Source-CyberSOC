@@ -38,7 +38,7 @@ Anyway, there is no doubt that the target CyberSOC will be a mix of commercial s
 ## Table of content
 * [Core Components](#core-components) 
   * [Technological Breakthrough](#technological-breakthrough)  
-  * [Dedicate IT vs Corporate IT](#dedicate-it-vs-corporate-it)
+  * [Dedicate IS vs Corporate IS](#dedicate-is-vs-corporate-is)
   * [Automation Engine](#automation-engine)
   * [CyberSOC Data Store](#cybersoc-data-store)
   * [Project Management and Issues Tracker](#project-management-and-issues-tracker)
