@@ -50,7 +50,7 @@ Anyway, there is no doubt that the target CyberSOC will be a mix of commercial s
   * [Organisation](#organisation)
 * [Ecosystem](#ecosystem)
   * [Asset Database](#asset-database)
-  * [Network Subnets Ownerships](#network-subnets-ownerships)
+  * [Network Subnets Ownership](#network-subnets-ownership)
 * [Identify](#identify)
   * [Continuous Exposure Discovery](#continuous-exposure-discovery)
   * [Vulnerability Management](#vulnerability-management)
@@ -177,6 +177,20 @@ A skilled technical core team must be considered. This team is :
 1. Accountable for maintaining the consistency of the software architecture/urbanization (especially when several solutions offer the same functionality) and the security of the CyberSOC IS;
 2. Responsible of developing the technical part of the services that will be described in next sections;
 3. Responsible for managing, including patching and upgrading, all the technical components of the CyberSOC IS.
+
+## Ecosystem
+### Asset Database
+
+
+> Open source solution that could be considered by IT Teams of the organisation:
+> - [GLPI](https://glpi-project.org/)
+
+### Network Subnets Ownership
+This component is a subset of the previous one. The purpose of this service is to get the right contact related to an event that contains IPs not listed in the Asset Database.
+For covering this case, each subnet assigned in the organization must be associated with a contact (e.g. a Security Officer). 
+
+> Open source solution that could be considered by Telecom Team of the organisation:
+> - [phpIPAM](https://phpipam.net/)
 
 ## Detect
 ### Continuous Exposure Discovery
