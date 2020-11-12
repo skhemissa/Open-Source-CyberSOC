@@ -281,11 +281,11 @@ Ntop?
 ### Log Collectors and Log Aggregators 
 Log collectors:
 > Open source solutions:
-> -[Filebeat](https://www.elastic.co/beats/filebeat) for collecting logs from files (e.g. web server logs) 
-> -[RSyslog](https://www.rsyslog.com/) for syslog based events;
+> - [Filebeat](https://www.elastic.co/beats/filebeat) for collecting logs from files (e.g. web server logs) 
+> - [RSyslog](https://www.rsyslog.com/) for syslog based events;
 
 > Not an open source solution for collecting Microsoft Windows events:
-> -[Windows Event Forwarding](https://docs.microsoft.com/en-us/windows/security/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection) for collecting Microsoft Windows events on dedicated Windows machine and [winlogbeat](https://www.elastic.co/fr/beats/winlogbeat) to transfers event to log aggregator;
+> - [Windows Event Forwarding](https://docs.microsoft.com/en-us/windows/security/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection) for collecting Microsoft Windows events on dedicated Windows machine and [winlogbeat](https://www.elastic.co/fr/beats/winlogbeat) to transfers event to log aggregator;
 > [Specific Microsoft Windows events to monitor](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor)
 > [Sysmon](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon) should be deployed.
 
@@ -293,7 +293,7 @@ Log aggregators consolidate logs sent by different sources then forward some of 
 
 Multiple log aggregators should be considered for addressing specific area (e.g. remote sites with low bandwidth) and also for processing a high number of events (e.g. firewalls logs or Active Directory events).
 > Open source solutions:
-> -[Graylog](https://www.graylog.org/products/open-source).
+> - [Graylog](https://www.graylog.org/products/open-source).
 > [Logstash](https://www.elastic.co/logstash) is required for connecting Filebeat agents to Graylog
 > Greylog have a specific plugin for enriching events [Threat Intelligence Plugin for Graylog](https://github.com/Graylog2/graylog-plugin-threatintel)
 
