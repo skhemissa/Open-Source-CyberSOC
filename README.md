@@ -3,22 +3,20 @@
 
 >Status: working copy.
 
-The purpose of this initiative is to provide a way of initiating and developing CyberSOC services based on open source solutions.
-
 “...there is no favourable wind for someone who does not know where he is heading”. Seneca
 
-No feedback will be given on solutions listed in this initiaive: each organisation must tests the listed solutions and make sure they work in their context.
+The purpose of this initiative is to provide a way of initiating and developing CyberSOC services based on open source solutions.
 
-Don't hesitate to suggest additional open solutions that could be listed in this initiative. Suggested solutions must be mature (the definition of "mature" should be done).
+No feedback will be given on solutions listed in this initiaive: each organisation must tests the listed solutions and make sure they work in their context.
 
 Services developed in this initiative cover the following capabilities of the CyberSOC:
 - **Core components**: this section lists the structural components that constitute the CyberSOC Information System (CyberSOC IS);
 - **Ecosystem**: this section covers services that enrich data processed by CyberSOC services for improving the accuracy and efficiency of CyberSOC operations;
-- **Identify**: this section focuses on fundamental services that support the organisation for identifying weaknesses in the Corporate IS that could be exploited by a malicious activity. Furthermore, services described in this section enrich detect and react capabilities;
+- **Identify**: this section focuses on fundamental services that support the organisation to identify weaknesses in the Corporate Information System (Corporate IS) that could be exploited by a malicious activity. Furthermore, services described in this section enrich detect and react capabilities;
 - **Detect**: this section describes the heart of the CyberSOC that identifies the occurrence of a cybersecurity event that raises a cybersecurity incident;
-- **React**: this section describes services that take action, including forensics, regarding a detected cybersecurity incident.
+- **React**: this section describes services that take action, including forensics, for addressing a detected cybersecurity incident.
 
-The following capability is not covered in this initiative: management of protection solutions that generate events processed by the CyberSOC. Protecting a Corporate Information Systems (Corporate IS) based on open solutions is another subject. It is not covered in this initiative.
+The following capability is not covered in this initiative: management of protection solutions that generate events processed by the CyberSOC. Protecting a Corporate IS based on open solutions is another subject. It is not covered in this initiative.
 
 This initiative is not intended to debate about the competition between open source and commercial solutions. Starting with open source solutions is a good way for, with a minimum of CAPEX: 
 1. Developing skills on a new topic;
@@ -33,7 +31,7 @@ Of course, a shift to commercial solutions could be considered when limits of im
 
 ... and why not outsourcing some services!
 
-Please note that some open source solutions are supported by specific companies with a paid service based on annual fees. But for most of open sources solutions, the support is provided by the associated community of developers: no SLA to consider for solving bugs and issues. For mitigating this risk, it is important to select robust and proven open source solution > the residual risk must be considered in the decision making.
+**Risk to be considered in the decision making:** some open source solutions are supported by specific companies with a paid service based on fees. But for most of open sources solutions, the support is provided by the associated community of developers: no SLA to consider for solving bugs and issues. For mitigating this risk, it is important to select robust and proven open source solutions > this risk must be considered in the decision making.
 
 Anyway, there is no doubt that the target CyberSOC will be a mix of commercial solutions, open source solutions and home made tools.
 
@@ -47,7 +45,7 @@ Anyway, there is no doubt that the target CyberSOC will be a mix of commercial s
   * [Knowledge Management](#knowledge-management)
   * [Business Intelligence and Reporting](#business-intelligence-and-reporting)
   * [Securing Access to CyberSOC services](#securing-access-to-cybersoc-services)
-  * [Organisation](#organisation)
+  * [Peoples](#peoples)
 * [Ecosystem](#ecosystem)
   * [Asset Database](#asset-database)
   * [Network Subnets Ownership](#network-subnets-ownership)
@@ -63,7 +61,7 @@ Anyway, there is no doubt that the target CyberSOC will be a mix of commercial s
   * [Network Behaviour Analysis](#network-behaviour-analysis)
   * [Log Collectors and Log Aggregators](#log-collectors-and-log-aggregators)
   * [SIEM Engine](#siem-engine)
-  * [Artefacts and Observables Analyzers](#artefacts-and-observables-analyzers)
+  * [Artefact Analyzers](#artefacts-analyzers)
 * [React](#react)
   * [Incident Tracking](#incident-tracking)
   * [Digital Forensics](#digital-forensics)
@@ -71,10 +69,14 @@ Anyway, there is no doubt that the target CyberSOC will be a mix of commercial s
 
 ## Core Components
 ### Technological Breakthrough
-It could be interesting to consider the implementation of an operating system and middlewares that are not used in Corporate Information System (Corporate IS): this technological breakthrough reduces the risk of collateral damages on CyberSOC operations in case of Corporate IS compromise. 
+It could be interesting to consider the implementation of an operating system and middlewares that are not used in Corporate IS: this technological breakthrough reduces the risk of collateral damages on CyberSOC operations in case of Corporate IS compromise. 
 
-> Open Source Operating System to consider: [Debian Linux](https://www.debian.org/), [Ubuntu](https://ubuntu.com/), [CentOS](https://www.centos.org/), [Fedora](https://getfedora.org/f), etc.
-> if the organisation use Red Hat Enterprise Linux), CentOS and Fedora should be avoided because both Linux flavours are based on Red Hat Enterprise Linux.
+> Open Source Operating System to consider:
+> - [Debian Linux](https://www.debian.org/);
+> - [Ubuntu](https://ubuntu.com/);
+> - [CentOS](https://www.centos.org/);
+> - [Fedora](https://getfedora.org/f).
+> - if the organisation uses Red Hat Enterprise Linux), CentOS and Fedora should be avoided because both Linux flavours are based on Red Hat Enterprise Linux.
 
 ### Dedicate IS vs Corporate IS
 It's a real and fundamental position to be decided related to the hosting of the CyberSOC infrastructure: does the CyberSOC infrastructure have to be hosted in the Corporate IS or in a Dedicated IS?
@@ -88,12 +90,10 @@ The answer to this question is not trivial: the answer could be addressed by bal
 Building an IS based on open solutions is another subject. It is not covered in this initiative.
 
 ### Automation Engine
-The purpose of the automation engine is accelerating and automating decision making on events that workflows could be modelled. This purpose is achieved by streamlining manual and repetitive tasks in playbooks.
-
-A playbook carries out various tasks and workflows based on rules, triggers, and events.
+The automation engine accelerates and automates decision making on events. This purpose is achieved by streamlining manual and repetitive tasks in automated and orchestrated workflows based on rules, triggers, and events. In the context of a CyberSOC, these workflows are designed by "playbooks".
 
 Example 1:
-An alert, generated by the SIEM (eg. “SIEM” section) should be enriched by running a specific playbook :
+An alert, generated by the SIEM (eg. “SIEM” section) should be enriched by running a specific playbook:
 1. Check in the asset database (e.g. “Ecosystem” section):
 
 if so
@@ -104,8 +104,8 @@ if so
 5. For internal ressources concerned by the alerts :
   - Perform IP/domain lookups; 
   - Run a hunting task to get artefacts from the asset: process list dump, get  hashes, etc.;
-  - Run artefacts analysis tools (local or provided a cloud service);
-- (For critical incident) create a collaboration workgroup to simplify information sharing and invite stakeholders (eg. [Microsoft O365 Teams Channel](https://docs.microsoft.com/en-us/graph/teams-create-group-and-team));
+  - Run analyses on collected artefacts (local tools or provided cloud services;
+- (For critical incident) create a collaboration workgroup to simplify information sharing and invite stakeholders (eg. [Microsoft O365 Teams Channel API](https://docs.microsoft.com/en-us/graph/teams-create-group-and-team));
 - Assign the alert to the right security officer
 
 Otherwise:
@@ -135,8 +135,8 @@ Some tools used by the CyberSOC generate data that are interesting for further a
 > - [Postgresql](https://www.postgresql.org/);
 > - [MariaDB](https://mariadb.com/kb/en/documentation/).
 
-Data stored in the database must be accessed using a standard interface. RestAPI for accessing such data should be considered.
-> Open source RESTful API:
+Data stored in the database must be accessed using a standard interface. RestAPI for accessing such data should be considered. Some solutions act as a RestAPI gateway between a requester and a database.
+> Open source solutions:
 > - [PostgREST](http://postgrest.org) for Postgresql;
 > - [MaxScale](https://mariadb.com/kb/en/maxscale/) for MariaDB.
 
@@ -161,10 +161,8 @@ Business Intelligence and reporting are important for:
 3. Providing the visibility and the value of the CyberSOC to external and internal stakeholders.
 
 > Open source solutions:
-> - [Dashbuilder](http://dashbuilder.org/)
-> - [Grafana](https://grafana.com/)
-
-https://www.goodfirms.co/blog/best-free-open-source-dashboard-software
+> - [Dashbuilder](http://dashbuilder.org/);
+> - [Grafana](https://grafana.com/).
 
 ### Securing access to CyberSOC services
 The access to the CyberSOC services must be protected by an IPSec VPN with Multi Factor Authentication (MFA), even from internal networks.
@@ -172,25 +170,26 @@ The access to the CyberSOC services must be protected by an IPSec VPN with Multi
 > - VPN: [OpenVPN](https://openvpn.net/);
 > - MFA: **TODO**.
 
-### Organisation
-A skilled technical core team must be considered. This team is : 
+### Peoples
+A skilled technical core team must be considered.
+This team is : 
 1. Accountable for maintaining the consistency of the software architecture/urbanization (especially when several solutions offer the same functionality) and the security of the CyberSOC IS;
 2. Responsible of developing the technical part of the services that will be described in next sections;
 3. Responsible for managing, including patching and upgrading, all the technical components of the CyberSOC IS.
 
 ## Ecosystem
 ### Asset Database
-The Asset Database is crucial for the efficiency of all automate tasks of the CyberSOC. The Asset Database should includes all assets implemented in the organisation, including hardware configuration, operating system, middlewares, applications/services, location, criticality, asset Owner, Security Officer, etc.
+The Asset Database is crucial for the efficiency of all automated tasks of the CyberSOC. The Asset Database should includes all assets implemented in the organisation, including hardware configuration, operating system, middlewares, applications/services, location, criticality, asset Owner, Security Officer, etc.
 
 > Open source solution that could be considered by IT Teams of the organisation:
-> - [GLPI](https://glpi-project.org/)
+> - [GLPI](https://glpi-project.org/).
 
 ### Network Subnets Ownership
-This component is a subset of the previous one. The purpose of this service is to get the right contact related to an event that contains IPs not listed in the Asset Database.
+This component is a subset of the previous one. The purpose of this service is to get the right contact related to an event that contains internal IPs not not associated to a asset from the Asset Database.
 For covering this case, each subnet assigned in the organization must be associated with a contact, at least a Security Officer. 
 
 > Open source solution that could be considered by Telecom Team of the organisation:
-> - [phpIPAM](https://phpipam.net/)
+> - [phpIPAM](https://phpipam.net/).
 
 ## Detect
 ### Continuous Exposure Discovery
@@ -209,30 +208,26 @@ For consolidating port scans results:
 > Open source solution:
 > - [IVRE](https://github.com/cea-sec/ivre) an on-premise shodan like.
 
-For testing specific vulnerabilities:
+For testing specific weaknesses/vulnerabilities:
 > Open source scripts: 
 > - [Nmap Scripting Engine (nse)](https://nmap.org/book/nse.html);
 > - [Github](https://github.com/).
 
-Main scripts used for specific vulnerabilities provide results in flat format: these results should be imported in the "CyberSOC Data Store" (e.g. "Core Components" section).
+A lot of scripts used for specific weaknesse/vulnerabilitie detections provide results in flat format: these results should be imported in the "CyberSOC Data Store" (e.g. "Core Components" section).
 
 ### Vulnerability Management
 This service assesses the security of Corporate IT components, including network equipment, operating systems, middlewares and applications.
-Scans of this service are exhaustive: they are slower than the scans executed by the service "Continuous Exposure Discovery". Both services could be paired by the Automation Engine: when a new host or a new opened port is detected, a full vulnerability scan could be launched automatically.
+Scans of this service are exhaustive: they are slower than the scans executed by the service "Continuous Exposure Discovery": both services could be paired by the Automation Engine: when a new host or a new opened port is detected, a full vulnerability scan could be launched automatically.
 Results of vulnerability scans should be processed by the Automation Engine for prioritisation, remediation issues creation and assignment.
 Scans could also be executed on-demand by the Automation Engine to verify that the remediation associated with a security bulletin is efficient. 
 
 > Open source solution: 
 > - [OpenVAS](https://www.openvas.org/).
 
-This service includes security bulletins processing sent by vendors and CERT (Take a look to the playbook provided in the “Core Components” section)
+This service includes security bulletins processing sent by vendors and CERT (Take a look to the example provided in the “Core Components” section).
 
 ### Pentesting
 This service is more related to technical skills of pentesters.
-
-> Open source solutions: 
-> - [Kali Linux](https://www.kali.org/);
-
 Pentest actions and results should be consolidated in a central platform.
 > Open source solutions: 
 > - [Faraday](https://github.com/infobyte/faraday) a multiuser pentest IDE.
@@ -305,7 +300,7 @@ Multiple log aggregators should be considered for addressing specific area (e.g.
 > - [Apache Motron](https://metron.apache.org/);
 > - [MozDef (Mozilla Defense Platform)](https://github.com/mozilla/MozDef) (Pre Beta).
 
-### Artefacts and Observables Analyzers
+### Artefact Analyzers
 Analyzer Engine connects to different tools to run specific action to enrich the content of a query (e.g. nslookup, public IP reputation) or executes a specific action (e.g. parsing file to extract meta or malicious content, run a URL and a file in a sandbox).
 Please note that some features provided by the Automation Engine could be provided by the Analyzer Engine. Thanks to the urbanization of the CyberSOC IS to define the relevant use cases to be implemented on each solution. 
 > Open source solution:
