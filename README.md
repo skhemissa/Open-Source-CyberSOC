@@ -42,6 +42,7 @@ Anyway, there is no doubt that the target CyberSOC will be a mix of commercial s
   * [Automation Engine](#automation-engine)
   * [CyberSOC Data Store](#cybersoc-data-store)
   * [Project Management and Issues Tracker](#project-management-and-issues-tracker)
+  * [Development Platform](#development-platform)
   * [Knowledge Management](#knowledge-management)
   * [Business Intelligence and Reporting](#business-intelligence-and-reporting)
   * [Securing Access to CyberSOC services](#securing-access-to-cybersoc-services)
@@ -145,6 +146,11 @@ Building a CyberSOC is a complete and complex project that involves multiple sta
 Furthermore, a lot of actions such as vulnerabilities and post-incident remediations are raised by the CyberSOC. These actions must be followed up and reported. 
 > Open source solution:
 > - [Redmine](https://www.redmine.org/).
+
+### Development Platform
+The development of new services requires a lot of developments that should be centralised in one place. This place is also the opportunity to have strong collaboraton between team members. 
+> Open Source solution:
+> - [GitLab](https://gitlab.com/gitlab-org/gitlab)
 
 ### Knowledge Management
 A wiki for consolidating knowledge and information such as processes, installations documents, technical manuals, etc. should be considered.
