@@ -269,7 +269,8 @@ Because the content of the CTI platform is populated with external sources, a hi
 > Open source solutions:
 > - [Suricata](https://suricata-ids.org/);
 > - [Snort](https://www.snort.org/);
-> - [Zeek (formerly Bro)](https://zeek.org/).
+> - [Zeek (formerly Bro)](https://zeek.org/);
+> - [Maltrail (malicious traffic detection system)](https://github.com/stamparm/maltrail).
 
 ### Decoy and Deception
 To catch enumerations and lateral movements not detected by existing security solutions.
