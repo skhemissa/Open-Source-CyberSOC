@@ -9,9 +9,6 @@
 > - [TheHive](https://github.com/TheHive-Project/TheHive)
 > Multiple automated actions done by TheHive could be interfaced with Automation Engine and Analyzer Engine.
 
-### Additional Ressources
-...
-
 ## Digital Forensics
 > Open source solutions:
 > - [GRR - Google Rapid Response](https://github.com/google/grr);
