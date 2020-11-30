@@ -21,6 +21,9 @@ It could be interesting to consider the implementation of an operating system an
 > - [Fedora](https://getfedora.org/f).
 > - if the organisation uses Red Hat Enterprise Linux), CentOS and Fedora should be avoided because both Linux flavours are based on Red Hat Enterprise Linux.
 
+### Additional Ressources
+...
+
 ## Dedicate IS vs Corporate IS
 It's a real and fundamental position to be decided related to the hosting of the CyberSOC infrastructure: does the CyberSOC infrastructure have to be hosted in the Corporate IS or in a Dedicated IS?
 
@@ -31,6 +34,9 @@ The implementation of a dedicated IS for the CyberSOC reduces the risk of collat
 The answer to this question is not trivial: the answer could be addressed by balancing the risk mentioned above and the cost of building a dedicated infrastructure and associated organisation and processes.
 
 Building an IS based on open solutions is another subject. It is not covered in this initiative.
+
+### Additional Ressources
+...
 
 ## Automation Engine
 The automation engine accelerates and automates decision making on events. This purpose is achieved by streamlining manual and repetitive tasks in automated and orchestrated workflows based on rules, triggers, and events. In the context of a CyberSOC, these workflows are designed by "playbooks".
@@ -72,6 +78,9 @@ Otherwise no action is done.
 > - [Shuffle](https://shuffler.io/) This automation solution supports OpenAPI that accelerates the implementation of  playbooks;
 > - [WALKOFF](https://nsacyber.github.io/WALKOFF/).
 
+### Additional Ressources
+...
+
 ## CyberSOC Data Store
 Some tools used by the CyberSOC generate data that are interesting for further analysis or for reporting purposes. A dedicated database for consolidating such data should be considered.  
 > Open source database:
@@ -83,16 +92,25 @@ Data stored in the database must be accessed using a standard interface. RestAPI
 > - [PostgREST](http://postgrest.org) for Postgresql;
 > - [MaxScale](https://mariadb.com/kb/en/maxscale/) for MariaDB.
 
+### Additional Ressources
+...
+
 ## Project Management and Issues Tracker
 Building a CyberSOC is a complete and complex project that involves multiple stakeholders. It's important to use a robust and flexible solution for managing this project.
 Furthermore, a lot of actions such as vulnerabilities and post-incident remediations are raised by the CyberSOC. These actions must be followed up and reported. 
 > Open source solution:
 > - [Redmine](https://www.redmine.org/).
 
+### Additional Ressources
+...
+
 ## Development Platform
 The development of new services requires a lot of developments that should be centralised in one place. This place is also the opportunity to have strong collaboraton between team members. 
 > Open Source solution:
 > - [GitLab](https://gitlab.com/gitlab-org/gitlab)
+
+### Additional Ressources
+...
 
 ## Knowledge Management
 A wiki for consolidating knowledge and information such as processes, installations documents, technical manuals, etc. should be considered.
@@ -102,6 +120,10 @@ A wiki for consolidating knowledge and information such as processes, installati
 > - [PmWiki](https://www.pmwiki.org/);
 > - [Tiki](https://tiki.org/).
 > - ….
+
+### Additional Ressources
+...
+
 ## Business Intelligence and Reporting
 Business Intelligence and reporting are important for:
 1. The follow-up of the CyberSOC operations performances;
@@ -112,11 +134,17 @@ Business Intelligence and reporting are important for:
 > - [Dashbuilder](http://dashbuilder.org/);
 > - [Grafana](https://grafana.com/).
 
+### Additional Ressources
+...
+
 ## Securing access to CyberSOC services
 The access to the CyberSOC services must be protected by an IPSec VPN with Multi Factor Authentication (MFA), even from internal networks.
 > Open source solution:
 > - VPN: [OpenVPN](https://openvpn.net/);
 > - MFA: **TODO**.
+
+### Additional Ressources
+...
 
 ## Peoples
 A skilled technical core team must be considered.
@@ -124,3 +152,6 @@ This team is :
 1. Accountable for maintaining the consistency of the software architecture/urbanization (especially when several solutions offer the same functionality) and the security of the CyberSOC IS;
 2. Responsible of developing the technical part of the services that will be described in next sections;
 3. Responsible for managing, including patching and upgrading, all the technical components of the CyberSOC IS.
+
+### Additional Ressources
+...
