@@ -3,6 +3,7 @@
 * [Vulnerability Management](#vulnerability-management)
 * [Pentesting](#pentesting)
 * [Threat Hunting](#threat-hunting)
+* [Cyber Threat Intelligence](#cyber-threat-intelligence)
 ## Continuous Exposure Discovery
 The purpose of this service is running continuously scans in the WAN and Internet faced subnets for discovering specific weaknesses in the Corporate IS such as weak credentials, unprotected services (e.g. Redis), unprotected management interfaces, specific ports (e.g. industrial modbus and S7), etc.
 
