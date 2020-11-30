@@ -36,7 +36,7 @@ Log collectors:
 > - [Sysmon](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon) should be deployed.
 
 ### Additional Resources
-[Australian Cyber Security Centre: Windows Event Logging and Forwarding](Windows Event Logging and Forwarding)
+[Australian Cyber Security Centre: Windows Event Logging and Forwarding](https://www.cyber.gov.au/sites/default/files/2020-06/PROTECT%20-%20Windows%20Event%20Logging%20and%20Forwarding%20%28June%202020%29.pdf)
 
 Log aggregators consolidate logs sent by different sources then forward some of them to the SIEM Engine based on specific rules. Some solutions could run simple rules for detecting suspicious activities (pre-correlation) ex. multiple tcp connections from the same source to different destinations (required collecting firewall logs).
 
