@@ -65,7 +65,7 @@ Anyway, there is no doubt that the target CyberSOC will be a mix of commercial s
   * [Network Behaviour Analysis](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/04_Detect.md#network-behaviour-analysis)
   * [Log Collectors and Log Aggregators](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/04_Detect.md#log-collectors-and-log-aggregators)
   * [SIEM Engine](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/04_Detect.md#siem-engine)
-  * [Artefact Analyzers](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/04_Detect.md#artefacts-analyzers)
+  * [Artefact Analyzers](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/04_Detect.md#artefact-analyzers)
 * [React](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/05_React.md)
   * [Incident Tracking](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/05_React.md#incident-tracking)
   * [Digital Forensics](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/05_React.md#digital-forensics)
