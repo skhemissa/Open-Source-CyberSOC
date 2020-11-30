@@ -14,8 +14,6 @@
 > - [Zeek (formerly Bro)](https://zeek.org/);
 > - [Maltrail (malicious traffic detection system)](https://github.com/stamparm/maltrail).
 
-
-
 ## Decoy and Deception
 To catch enumerations and lateral movements not detected by existing security solutions.
 > Open source solution:
@@ -23,22 +21,14 @@ To catch enumerations and lateral movements not detected by existing security so
 > - [Kippo](https://github.com/desaster/kippo) SSH honeypot;
 > - [Conpot](https://github.com/mushorg/conpot) ICS honeypot.
 
-
-
-
 ## Network Behaviour Analysis
 Ntop?
-
-
-
 
 ## Log Collectors and Log Aggregators 
 Log collectors:
 > Open source solutions:
 > - [Filebeat](https://www.elastic.co/beats/filebeat) for collecting logs from files (e.g. web server logs) 
 > - [RSyslog](https://www.rsyslog.com/) for syslog based events;
-
-
 
 > Not an open source solution for collecting Microsoft Windows events:
 > - [Windows Event Forwarding](https://docs.microsoft.com/en-us/windows/security/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection) for collecting Microsoft Windows events on dedicated Windows machine and [winlogbeat](https://www.elastic.co/fr/beats/winlogbeat) to transfers event to log aggregator;
@@ -54,8 +44,6 @@ Multiple log aggregators should be considered for addressing specific area (e.g.
 > - [Logstash](https://www.elastic.co/logstash) is required for connecting Filebeat agents to Graylog
 >  Greylog have a specific plugin for enriching events [Threat Intelligence Plugin for Graylog](https://github.com/Graylog2/graylog-plugin-threatintel)
 
-
-
 ## SIEM Engine
 > Open source solutions:
 > - [OSSEC](https://www.ossec.net/);
@@ -65,7 +53,7 @@ Multiple log aggregators should be considered for addressing specific area (e.g.
 > - [MozDef (Mozilla Defense Platform)](https://github.com/mozilla/MozDef) (Pre Beta).
 
 ### Additional Resources
-Paladion 45 use cases for Security Monitoring](https://www.paladion.net/siem-use-cases)
+[Paladion 45 use cases for Security Monitoring](https://www.paladion.net/siem-use-cases)
 
 ## Artefact Analyzers
 Analyzer Engine connects to different tools to run specific action to enrich the content of a query (e.g. nslookup, public IP reputation) or executes a specific action (e.g. parsing file to extract meta or malicious content, run a URL and a file in a sandbox).
@@ -76,7 +64,5 @@ Please note that some features provided by the Automation Engine could be provid
 ### Additional Resources
 > Free / open source solution:
 > - [Take a look to Cortex dedicated page](https://github.com/TheHive-Project/CortexDocs/blob/master/analyzer_requirements.md).
-
-
 
 [Table of Content](https://github.com/skhemissa/Open-Source-CyberSOC#table-of-content)
