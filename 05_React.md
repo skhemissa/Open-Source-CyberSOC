@@ -20,7 +20,7 @@
 > - [Rescue & Forensic Disk](https://github.com/skhemissa/Rescue-Forensic-Disk) my personal project.
 
 ### Additional Ressources
-[Security Incident Management Maturity Model, also called SIM3](http://opencsirt.org/wp-content/uploads/2019/12/SIM3-mkXVIIIc.pdf) and the [The associated online assessment tool](https://sim3-check.opencsirt.org/#/)
+[Security Incident Management Maturity Model, also called SIM3](http://opencsirt.org/wp-content/uploads/2019/12/SIM3-mkXVIIIc.pdf) and the [The associated online assessment tool](https://sim3-check.opencsirt.org/)
 
 
 
