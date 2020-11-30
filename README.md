@@ -1,5 +1,5 @@
 # Open Source CyberSOC 
-> aka CyberSOC OSS
+> aka OpenCyberSOC
 
 >Author: Sabri Khemissa sabri.khemissa@gmail.com.
 
