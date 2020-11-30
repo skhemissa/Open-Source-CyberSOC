@@ -37,32 +37,32 @@ Anyway, there is no doubt that the target CyberSOC will be a mix of commercial s
 
 ## Table of content
 * [Core Components](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/01_Core_Components.md)
-  * Technological Breakthrough
-  * Dedicate IS vs Corporate IS
-  * Automation Engine
-  * CyberSOC Data Store
-  * Project Management and Issues Tracker
-  * Development Platform
-  * Knowledge Management
-  * Business Intelligence and Reporting
-  * Securing Access to CyberSOC services
-  * Peoples](#peoples)
+  * [Technological Breakthrough](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/01_Core_Components.md#technological-breakthrough)
+  * [Dedicate IS vs Corporate IS](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/01_Core_Components.md#dedicate-is-vs-corporate-is)
+  * [Automation Engine](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/01_Core_Components.md#automation-engine)
+  * [CyberSOC Data Store](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/01_Core_Components.md#cybersoc-data-store)
+  * [Project Management and Issues Tracker](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/01_Core_Components.md#project-management-and-issues-tracker)
+  * [Development Platform](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/01_Core_Components.md#development-platform)
+  * [Knowledge Management](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/01_Core_Components.md#knowledge-management)
+  * [Business Intelligence and Reporting](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/01_Core_Components.md#business-intelligence-and-reporting)
+  * [Securing Access to CyberSOC services](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/01_Core_Components.md#securing-access-to-cybersoc-services)
+  * [Peoples](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/01_Core_Components.md#peoples)
 * [Ecosystem](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/02_Ecosystem.md)
-  * Asset Database
-  * Network Subnets Ownership]
+  * [Asset Database](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/02_Ecosystem.md#asset-database)
+  * [Network Subnets Ownership](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/02_Ecosystem.md#network-subnets-ownership)
 * [Identify](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/03_Identify.md)
-  * Continuous Exposure Discovery
-  * Vulnerability Management
-  * Pentesting
-  * Threat Hunting
-  * Cyber Threat Intelligence
+  * [Continuous Exposure Discovery](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/03_Identify.md#continuous-exposure-discovery)
+  * [Vulnerability Management](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/03_Identify.md#vulnerability-management)
+  * [Pentesting](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/03_Identify.md#pentesting)
+  * [Threat Hunting](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/03_Identify.md#threat-hunting)
+  * [Cyber Threat Intelligence](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/03_Identify.md#cyber-threat-intelligence)
 * [Detect](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/04_Detect.md)
-  * Intrusion Detection Systems
-  * Decoy and Deception
-  * Network Behaviour Analysis
-  * Log Collectors and Log Aggregators
-  * SIEM Engine
-  * Artefact Analyzers](#artefacts-analyzers)
+  * [Intrusion Detection Systems](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/04_Detect.md#intrusion-detection-systems)
+  * [Decoy and Deception](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/04_Detect.md#decoy-and-deception)
+  * [Network Behaviour Analysis](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/04_Detect.md#network-behaviour-analysis)
+  * [Log Collectors and Log Aggregators](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/04_Detect.md#log-collectors-and-log-aggregators)
+  * [SIEM Engine](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/04_Detect.md#siem-engine)
+  * [Artefact Analyzers](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/04_Detect.md#artefacts-analyzers)
 * [React](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/05_React.md)
-  * Incident Tracking
-  * Digital Forensics
+  * [Incident Tracking](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/05_React.md#incident-tracking)
+  * [Digital Forensics](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/05_React.md#digital-forensics)
