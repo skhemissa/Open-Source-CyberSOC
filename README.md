@@ -38,6 +38,7 @@ Of course, a shift to commercial solutions could be considered when limits of im
 Anyway, there is no doubt that the target CyberSOC will be a mix of commercial solutions, open source solutions and home made tools.
 
 ## Table of content
+* [Introduction](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/README.md)
 * [Core Components](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/01_Core_Components.md)
   * [Technological Breakthrough](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/01_Core_Components.md#technological-breakthrough)
   * [Dedicate IS vs Corporate IS](https://github.com/skhemissa/Open-Source-CyberSOC/blob/main/01_Core_Components.md#dedicate-is-vs-corporate-is)
