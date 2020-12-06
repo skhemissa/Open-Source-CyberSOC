@@ -1,11 +1,12 @@
 # Identify
-* [Continuous Exposure Discovery](#continuous-exposure-discovery)
+* [Network Exposure and Discovery](#network-exposure-and-discovery)
+* [Public Exposure](#public-exposure)
 * [Vulnerability Management](#vulnerability-management)
 * [Pentesting](#pentesting)
 * [Threat Hunting](#threat-hunting)
 * [Cyber Threat Intelligence](#cyber-threat-intelligence)
 
-## Continuous Exposure Discovery
+## Network Exposure and Discovery
 The purpose of this service is running continuously scans in the WAN and Internet faced subnets for discovering specific weaknesses in the Corporate IS such as weak credentials, unprotected services (e.g. Redis), unprotected management interfaces, specific ports (e.g. industrial modbus and S7), etc.
 
 In large environments, fast solutions must be considered. Otherwise, the next service "Vulnerability Management" is enough.
@@ -27,6 +28,11 @@ For testing specific weaknesses/vulnerabilities:
 > - [Github](https://github.com/).
 
 A lot of scripts used for specific weaknesse/vulnerabilitie detections provide results in flat format: these results should be imported in the "CyberSOC Data Store" (e.g. "Core Components" section).
+
+## Public Exposure
+Search for data related to the company accessible in publicly available sources. public data that an attacker could exploit against the company.
+> Open source solution:
+> - [Datasploit](https://github.com/DataSploit/datasploit/)
 
 ## Vulnerability Management
 This service assesses the security of Corporate IT components, including network equipment, operating systems, middlewares and applications.
