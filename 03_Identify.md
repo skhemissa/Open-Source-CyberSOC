@@ -44,7 +44,8 @@ Scans could also be executed on-demand by the Automation Engine to verify that t
 > - [OpenVAS](https://www.openvas.org/);
 > - [Grype](https://github.com/anchore/grype): a vulnerability scanner for container images and filesystems;
 > - [Webvulnscan](https://github.com/hhucn/webvulnscan): security scanner for Web Applications;
-> - [Lynis](https://cisofy.com/lynis/): Security auditing and hardening tool for Linux/Unix
+> - [Lynis](https://cisofy.com/lynis/): Security auditing and hardening tool for Linux/Unix;
+> - [Carnivore](https://github.com/nccgroup/Carnivore): Microsoft External Assessment Tool
 
 This service includes security bulletins processing sent by vendors and CERT (Take a look to the example provided in the “Core Components” section).
 
