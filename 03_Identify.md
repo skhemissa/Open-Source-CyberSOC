@@ -58,6 +58,7 @@ Two kinds of threat hunting should be considered:
 - Host hunting for collecting artefacts that could be associated with a suspicious activity (running processes, binaries, task scheduler entries, etc.).
 > Open source solution:
 > - [Osquery](https://osquery.io/) for threat hunting and [Kolide Fleet](https://github.com/kolide/fleet) for managing an osquery infrastructure.
+> - [Security Onion](https://securityonionsolutions.com/software)
 
 Threat Hunting campaigns are executed on-demand manually otherwise it is a detection topic.
 
