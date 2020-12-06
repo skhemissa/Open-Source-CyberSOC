@@ -36,6 +36,7 @@ Scans could also be executed on-demand by the Automation Engine to verify that t
 
 > Open source solution: 
 > - [OpenVAS](https://www.openvas.org/).
+> - [Grype](https://github.com/anchore/grype): a vulnerability scanner for container images and filesystems
 
 This service includes security bulletins processing sent by vendors and CERT (Take a look to the example provided in the “Core Components” section).
 
