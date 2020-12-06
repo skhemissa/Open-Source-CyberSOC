@@ -41,8 +41,10 @@ Results of vulnerability scans should be processed by the Automation Engine for 
 Scans could also be executed on-demand by the Automation Engine to verify that the remediation associated with a security bulletin is efficient. 
 
 > Open source solution: 
-> - [OpenVAS](https://www.openvas.org/).
-> - [Grype](https://github.com/anchore/grype): a vulnerability scanner for container images and filesystems
+> - [OpenVAS](https://www.openvas.org/);
+> - [Grype](https://github.com/anchore/grype): a vulnerability scanner for container images and filesystems;
+> - [Webvulnscan](https://github.com/hhucn/webvulnscan): security scanner for Web Applications;
+> - [Lynis](https://cisofy.com/lynis/): Security auditing and hardening tool for Linux/Unix
 
 This service includes security bulletins processing sent by vendors and CERT (Take a look to the example provided in the “Core Components” section).
 
