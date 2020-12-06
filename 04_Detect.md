@@ -52,6 +52,7 @@ Multiple log aggregators should be considered for addressing specific area (e.g.
 > - [OSSEC](https://www.ossec.net/);
 > - [Wazuh](https://wazuh.com/) a fork of OSSEC;
 > - [Elastic Stack Basic Plan](https://www.elastic.co/siem);
+> - [Dsiem](https://github.com/defenxor/dsiemis): security event correlation engine for Elastic;
 > - [Apache Motron](https://metron.apache.org/);
 > - [MozDef (Mozilla Defense Platform)](https://github.com/mozilla/MozDef) (Pre Beta).
 
