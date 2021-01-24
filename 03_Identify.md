@@ -1,10 +1,17 @@
 # Identify
+* [CVE Alerting Platform](#cve-alerting-platform)
 * [Network Exposure and Discovery](#network-exposure-and-discovery)
 * [Public Exposure](#public-exposure)
 * [Vulnerability Management](#vulnerability-management)
 * [Pentesting](#pentesting)
 * [Threat Hunting](#threat-hunting)
 * [Cyber Threat Intelligence](#cyber-threat-intelligence)
+
+## CVE Alerting Platform
+This service aims to notify owners about new vulnerabilies related to their products. Such platform should be connected to an issue tracker system for remediations follow-up.
+
+> Open source solutions:
+> - [OpenCVE](https://www.opencve.io/)
 
 ## Network Exposure and Discovery
 The purpose of this service is running continuously scans in the WAN and Internet faced subnets for discovering specific weaknesses in the Corporate IS such as weak credentials, unprotected services (e.g. Redis), unprotected management interfaces, specific ports (e.g. industrial modbus and S7), etc.
