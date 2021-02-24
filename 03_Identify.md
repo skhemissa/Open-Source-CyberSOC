@@ -3,6 +3,7 @@
 * [Network Exposure and Discovery](#network-exposure-and-discovery)
 * [Public Exposure](#public-exposure)
 * [Vulnerability Management](#vulnerability-management)
+* [Cloud Security Auditing](#cloud-security-auditing)
 * [Pentesting](#pentesting)
 * [Threat Hunting](#threat-hunting)
 * [Cyber Threat Intelligence](#cyber-threat-intelligence)
@@ -59,7 +60,7 @@ This service includes security bulletins processing sent by vendors and CERT (Ta
 ## Cloud Security Auditing
 This service assesses the security of cloud environments. This service returns a series of potential misconfigurations and security risks.
 
-> Open source solution: 
+> Open source solutions: 
 > - [Scout Suite](https://github.com/nccgroup/ScoutSuite);
 > - [CloudSploit by Aqua](https://github.com/aquasecurity/cloudsploit).
 
