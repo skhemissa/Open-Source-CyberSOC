@@ -58,6 +58,7 @@ Multiple log aggregators should be considered for addressing specific area (e.g.
 
 ### Additional Resources
 [Paladion 45 use cases for Security Monitoring](https://www.paladion.net/siem-use-cases)
+
 [SIGMA Generic Signature Format for SIEM Systems](https://github.com/Neo23x0/sigma)
 
 ## Artefact Analyzers
