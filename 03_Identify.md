@@ -63,6 +63,7 @@ This service assesses the security of cloud environments. This service returns a
 > Open source solutions: 
 > - [Scout Suite](https://github.com/nccgroup/ScoutSuite);
 > - [CloudSploit by Aqua](https://github.com/aquasecurity/cloudsploit).
+> - [OpenCSPM](https://github.com/OpenCSPM/opencspm)
 
 ## Pentesting
 This service is more related to technical skills of pentesters.
