@@ -9,6 +9,7 @@
 
 ## Intrusion Detection Systems
 > Open source solutions:
+> - [ROCK NSM (Response Operation Collection Kit)](https://rocknsm.io/);
 > - [Suricata](https://suricata-ids.org/);
 > - [Snort](https://www.snort.org/);
 > - [Zeek (formerly Bro)](https://zeek.org/);
