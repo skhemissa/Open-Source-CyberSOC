@@ -39,7 +39,7 @@ A lot of scripts used for specific weaknesse/vulnerabilitie detections provide r
 ## Public Exposure
 Search for data related to the company accessible in publicly available sources. public data that an attacker could exploit against the company.
 > Open source solution:
-> - [Datasploit](https://github.com/DataSploit/datasploit/)
+> - [Datasploit](https://github.com/DataSploit/datasploit/).
 
 ## Vulnerability Management
 This service assesses the security of Corporate IT components, including network equipment, operating systems, middlewares and applications.
@@ -52,9 +52,16 @@ Scans could also be executed on-demand by the Automation Engine to verify that t
 > - [Grype](https://github.com/anchore/grype): a vulnerability scanner for container images and filesystems;
 > - [Webvulnscan](https://github.com/hhucn/webvulnscan): security scanner for Web Applications;
 > - [Lynis](https://cisofy.com/lynis/): Security auditing and hardening tool for Linux/Unix;
-> - [Carnivore](https://github.com/nccgroup/Carnivore): Microsoft External Assessment Tool
+> - [Carnivore](https://github.com/nccgroup/Carnivore): Microsoft External Assessment Tool.
 
 This service includes security bulletins processing sent by vendors and CERT (Take a look to the example provided in the “Core Components” section).
+
+## Cloud Security Auditing
+This service assesses the security of cloud environments. This service returns a series of potential misconfigurations and security risks.
+
+> Open source solution: 
+> - [Scout Suite](https://github.com/nccgroup/ScoutSuite);
+> - [CloudSploit by Aqua](https://github.com/aquasecurity/cloudsploit).
 
 ## Pentesting
 This service is more related to technical skills of pentesters.
@@ -74,8 +81,8 @@ Two kinds of threat hunting should be considered:
 
 - Host hunting for collecting artefacts that could be associated with a suspicious activity (running processes, binaries, task scheduler entries, etc.).
 > Open source solution:
-> - [Osquery](https://osquery.io/) for threat hunting and [Kolide Fleet](https://github.com/kolide/fleet) for managing an osquery infrastructure.
-> - [Security Onion](https://securityonionsolutions.com/software)
+> - [Osquery](https://osquery.io/) for threat hunting and [Kolide Fleet](https://github.com/kolide/fleet) for managing an osquery infrastructure;
+> - [Security Onion](https://securityonionsolutions.com/software).
 
 Threat Hunting campaigns are executed on-demand manually otherwise it is a detection topic.
 
