@@ -71,6 +71,7 @@ Otherwise no action is done.
 
 > - [Shuffle](https://shuffler.io/) This automation solution supports OpenAPI that accelerates the implementation of  playbooks;
 > - [WALKOFF](https://nsacyber.github.io/WALKOFF/).
+> - [Awesome SOAR: Automation esources list](https://github.com/correlatedsecurity/Awesome-SOAR)
 
 ## CyberSOC Data Store
 Some tools used by the CyberSOC generate data that are interesting for further analysis or for reporting purposes. A dedicated database for consolidating such data should be considered.  
