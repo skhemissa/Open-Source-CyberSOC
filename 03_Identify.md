@@ -49,7 +49,8 @@ Results of vulnerability scans should be processed by the Automation Engine for 
 Scans could also be executed on-demand by the Automation Engine to verify that the remediation associated with a security bulletin is efficient. 
 
 > Open source solution: 
-> - [OpenVAS](https://www.openvas.org/);
+> - [Archery](https://www.archerysec.com/): a vulnerability assessment and management tool. Archery uses popular opensource tools to perform comprehensive scanning for web application and network (OpenVAS, OWASP ZAP, etc.)
+> - [OpenVAS](https://www.openvas.org/): a full-featured vulnerability scanner
 > - [Grype](https://github.com/anchore/grype): a vulnerability scanner for container images and filesystems;
 > - [Webvulnscan](https://github.com/hhucn/webvulnscan): security scanner for Web Applications;
 > - [Lynis](https://cisofy.com/lynis/): Security auditing and hardening tool for Linux/Unix;
